@@ -3,7 +3,7 @@ package core.basesyntax;
 import java.util.Random;
 
 public class ColorSupplier {
-    private static final Random RANDOM = new Random();
+    private final Random RANDOM = new Random();
 
     private enum Colors {
         RED, ORANGE, YELLOW, GREEN, LIGHT_BLUE, BLUE, VIOLET
