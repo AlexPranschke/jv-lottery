@@ -9,8 +9,6 @@ public class Lottery {
     ColorSupplier colorSupplier = new ColorSupplier();
 
     public Ball getRandomBall() {
-        String randomColor = colorSupplier.getRandomColor();
-        int randomSize = RANDOM.nextInt(MAX_SIZE - MIN_SIZE + 1) + MIN_SIZE;
-        return new Ball(randomColor, randomSize);
+        return new Ball(colorSupplier.getRandomColor(), RANDOM.nextInt(MAX_SIZE - MIN_SIZE + 1) + MIN_SIZE);
     }
 }
