@@ -1,4 +1,5 @@
 package core.basesyntax;
+import java.util.Random;
 public class Lottery {
     private static final int MIN_SIZE = 1;
     private static final int MAX_SIZE = 100;
