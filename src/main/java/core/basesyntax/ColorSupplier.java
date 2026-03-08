@@ -5,12 +5,11 @@ import java.util.Random;
 public class ColorSupplier {
     private static final Random RANDOM = new Random();
 
-    enum Colors {
+    private enum Colors {
         RED, ORANGE, YELLOW, GREEN, LIGHT_BLUE, BLUE, VIOLET
     }
 
     public String getRandomColor() {
-        int randomIndex = RANDOM.nextInt(Colors.values().length);
-        return Colors.values()[randomIndex].name();
+        return Colors.values()[RANDOM.nextInt(Colors.values().length)].name();
     }
 }
